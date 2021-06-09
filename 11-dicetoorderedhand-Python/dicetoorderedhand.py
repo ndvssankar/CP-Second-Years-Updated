@@ -8,8 +8,7 @@
 # assert(dicetoorderedhand(1,4,2) == 421)
 # assert(dicetoorderedhand(6,5,6) == 665)
 # assert(dicetoorderedhand(2,2,2) == 222)
-# Hint: You can use max(a,b,c) to find the largest of 3 values, and
-# min(a,b,c) to find the smallest.
+
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here

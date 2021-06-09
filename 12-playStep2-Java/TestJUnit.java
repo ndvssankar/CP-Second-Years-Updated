@@ -17,7 +17,7 @@ public class TestJUnit {
     PlayStep2 playStep2 = new PlayStep2();
    @Test
    public void testCase1() {
-      assertArrayEquals("1. ", "1. ", new int[]{421, 23}, playStep2.playStep2(413, 2312));
+      assertArrayEquals("1. ", new int[]{421, 23}, playStep2.playStep2(413, 2312));
    }
 
    @Test

@@ -17,6 +17,11 @@
 // new hand is 421. It has to be sorted, but it already is. Finally, the dice was 2312, but we used 2
 // digits, so now it's just 23. We return the hand and the dice, so we return (421, 23).
 
+// For Example:
+// assert(playstep2(544, 456) == (644, 45))
+// If you have 2 matching dice (a pair), keep the pair and roll one die to replace the third die.
+// So the output is (644, 45)
+
 // Here are some more examples. Be sure you carefully understand them:
 // assert(playstep2(413, 2312) == (421, 23))
 // assert(playstep2(413, 2345) == (544, 23))
@@ -27,6 +32,7 @@
 // Hint: Then, you may wish to use diceToOrderedHand(a, b, c) at the end to convert the 3 dice back
 // into a sorted hand.
 // Hint: Also, remember to use % to get the one's digit, and use //= to get rid of the one's digit.
+// Hint: You may wish to write a helper function for max(a,b,c) to find the largest of 3 values, and min(a,b,c) to find the smallest.
 
 public class PlayStep2 {
 	public int[] playStep2(int hand, int dice) {

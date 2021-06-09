@@ -16,17 +16,17 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals(new IsHappyNumber().isHappyNumber(-7), false);
-      assertEquals(new IsHappyNumber().isHappyNumber(1), true);
-      assertEquals(new IsHappyNumber().isHappyNumber(2), false);
-      assertEquals(new IsHappyNumber().isHappyNumber(98), false);
+		assertEquals("1.", false, new IsHappyNumber().isHappyNumber(-7));
+      assertEquals("2.", true, new IsHappyNumber().isHappyNumber(1));
+      assertEquals("3.", false, new IsHappyNumber().isHappyNumber(2));
+      assertEquals("4.", false, new IsHappyNumber().isHappyNumber(98));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(new IsHappyNumber().isHappyNumber(405), false);
-      assertEquals(new IsHappyNumber().isHappyNumber(97), true);
-      assertEquals(new IsHappyNumber().isHappyNumber(404), true);
-      assertEquals(new IsHappyNumber().isHappyNumber(0), false);
+      assertEquals("1.", false, new IsHappyNumber().isHappyNumber(405));
+      assertEquals("2.", true, new IsHappyNumber().isHappyNumber(97));
+      assertEquals("3.", true, new IsHappyNumber().isHappyNumber(404));
+      assertEquals("4.", false, new IsHappyNumber().isHappyNumber(0));
    }
 }

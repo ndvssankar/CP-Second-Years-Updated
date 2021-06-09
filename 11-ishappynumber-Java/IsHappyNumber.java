@@ -15,6 +15,7 @@
 // assert(ishappynumber(405) == False)
 
 public class IsHappyNumber {
+
 	public boolean isHappyNumber(int n) {
 		// your code goes here
 		return false;

@@ -11,32 +11,31 @@
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertArrayEquals;
 
 public class TestJUnit {
    HandToDice handToDice = new HandToDice();
    @Test
    public void testCase1() {
-      assertArrayEquals(new int[]{1, 2, 3}, handToDice.handToDice(123));
+      assertEquals("1.", java.util.Arrays.toString(new int[]{1, 2, 3}), java.util.Arrays.toString(handToDice.handToDice(123)));
    }
 
    @Test
    public void testCase2() {
-      assertArrayEquals(new int[]{2, 1, 4}, handToDice.handToDice(214));
+      assertEquals("1.", java.util.Arrays.toString(new int[]{2, 1, 4}), java.util.Arrays.toString(handToDice.handToDice(214)));
    }
 
    @Test
    public void testCase3() {
-      assertArrayEquals(new int[]{4, 2, 2}, handToDice.handToDice(422));
+      assertEquals("1.", java.util.Arrays.toString(new int[]{4, 2, 2}), java.util.Arrays.toString(handToDice.handToDice(422)));
    }
 
    @Test
    public void testCase4() {
-      assertArrayEquals(new int[]{4, 0, 0}, handToDice.handToDice(400));
+      assertEquals("1.", java.util.Arrays.toString(new int[]{4, 0, 0}), java.util.Arrays.toString(handToDice.handToDice(400)));
    }
 
    @Test
    public void testCase5() {
-      assertArrayEquals(new int[]{1, 0, 1}, handToDice.handToDice(101));
+      assertEquals("1.", java.util.Arrays.toString(new int[]{1, 0, 1}), java.util.Arrays.toString(handToDice.handToDice(101)));
    }
 }

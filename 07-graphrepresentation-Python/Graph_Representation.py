@@ -3,6 +3,9 @@ class Node(object):
         self.value = value
         self.edges = []
 
+'''
+This class defines an Edge
+'''
 class Edge(object):
     def __init__(self, value, node_from, node_to):
         self.value = value

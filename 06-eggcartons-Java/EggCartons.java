@@ -3,8 +3,13 @@
 // # the smallest integer number of cartons required to hold 
 // # that many eggs, where a carton may hold up to 12 eggs
 
-class eggcartons {
-	public int fun_eggcartons(int eggs){
-		return 0;
+class EggCartons {
+	public int eggCartons(int eggs) {
+		// Your code goes here....
+		int cartoons = eggs/12;
+		if(eggs %12 != 0){
+			cartoons = cartoons+1;
+		}
+		return cartoons;
 	}
 }

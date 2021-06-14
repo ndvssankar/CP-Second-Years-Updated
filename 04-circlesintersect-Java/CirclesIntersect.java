@@ -4,8 +4,9 @@
 // # and the circle centered at (x2,y2) with radius r2, and returns True 
 // # if the two circles intersect and False otherwise.
 
-class circlesintersect {
-	public boolean fun_circlesintersect(int x1, int y1, int r1, int x2, int y2, int r2){
+public class CirclesIntersect {
+	public boolean circlesIntersect(int x1, int y1, int r1, int x2, int y2, int r2){
+		// Your code goes here....
 		return false;
 	}
 }

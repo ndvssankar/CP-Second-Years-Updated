@@ -18,16 +18,16 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      circlesintersect s = new circlesintersect();
-      assertEquals("1.", true, s.fun_circlesintersect(-10, 8, 30, 14, -24, 10));
-      assertEquals("2.", false, s.fun_circlesintersect(3, 4, 5, 14, 18, 8));
+      CirclesIntersect s = new CirclesIntersect();
+      assertEquals("1.", true, s.circlesIntersect(-10, 8, 30, 14, -24, 10));
+      assertEquals("2.", false, s.circlesIntersect(3, 4, 5, 14, 18, 8));
       
     }
 
    @Test
    public void testCase2() {
-      circlesintersect s = new circlesintersect();
-      assertEquals("1.", false, s.fun_circlesintersect(2, 3, 12, 15, 28, 10));
-      assertEquals("2.", true, s.fun_circlesintersect(5, 6, 14, 8, 7, 9));  
+      CirclesIntersect s = new CirclesIntersect();
+      assertEquals("1.", false, s.circlesIntersect(2, 3, 12, 15, 28, 10));
+      assertEquals("2.", true, s.circlesIntersect(5, 6, 14, 8, 7, 9));  
    }
 }

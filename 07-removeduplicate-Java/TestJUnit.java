@@ -16,19 +16,19 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals(new RemoveDuplicate().removeDuplicate("JavaPython"), "JavPython");
-      assertEquals(new RemoveDuplicate().removeDuplicate("HelloWorld"), "HelloWrld");
-      assertEquals(new RemoveDuplicate().removeDuplicate("EEE"), "E");
-      assertEquals(new RemoveDuplicate().removeDuplicate("a a "), "a ");
+		assertEquals("1.", "JavPython", new RemoveDuplicate().removeDuplicate("JavaPython"));
+      assertEquals("2.", "HeloWrd", new RemoveDuplicate().removeDuplicate("HelloWorld"));
+      assertEquals("3.", "E", new RemoveDuplicate().removeDuplicate("EEE"));
+      assertEquals("4.", "a ", new RemoveDuplicate().removeDuplicate("a a "));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(new RemoveDuplicate().removeDuplicate("121212121"), "12");
-      assertEquals(new RemoveDuplicate().removeDuplicate(""), "");
-      assertEquals(new RemoveDuplicate().removeDuplicate("Test"), "Test");
-      assertEquals(new RemoveDuplicate().removeDuplicate("1001"), "10");
-      assertEquals(new RemoveDuplicate().removeDuplicate("11110000"), "10");
+      assertEquals("1.", "12", new RemoveDuplicate().removeDuplicate("121212121"));
+      assertEquals("2.",  "", new RemoveDuplicate().removeDuplicate(""));
+      assertEquals("3.", "Test", new RemoveDuplicate().removeDuplicate("Test"));
+      assertEquals("4.", "10", new RemoveDuplicate().removeDuplicate("1001"));
+      assertEquals("5.", "10", new RemoveDuplicate().removeDuplicate("11110000"));
    }
 }
 

@@ -16,17 +16,17 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals(new IsRotated().isRotated("XYZ", "ZXY"), true);
-      assertEquals(new IsRotated().isRotated("12345", "54321"), true);
+		assertEquals("1.", true, new IsRotated().isRotated("XYZ", "ZXY"));
+      assertEquals("2.", false, new IsRotated().isRotated("12345", "54321"));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"), true);
-      assertEquals(new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "JKLMNOPQRSTUVWXYZABCDEFGHI"), true);
-      assertEquals(new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ACDEFGHIJKLMNOPQRSTUVWXYZB"), false);
-      assertEquals(new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZZ"), false);
-      assertEquals(new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ABCDEFGHIJKLMNPQRSTUVWXYZ"), false);
-      assertEquals(new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSUVWXYZ", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"), false);
+      assertEquals("1.", true, new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"));
+      assertEquals("2.", true, new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "JKLMNOPQRSTUVWXYZABCDEFGHI"));
+      assertEquals("3.", false, new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ACDEFGHIJKLMNOPQRSTUVWXYZB"));
+      assertEquals("4.", false, new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZZ"));
+      assertEquals("5.", false, new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ABCDEFGHIJKLMNPQRSTUVWXYZ"));
+      assertEquals("6.", false, new IsRotated().isRotated("ABCDEFGHIJKLMNOPQRSUVWXYZ", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"));
    }
 }

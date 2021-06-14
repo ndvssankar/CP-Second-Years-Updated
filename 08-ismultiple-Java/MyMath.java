@@ -4,9 +4,9 @@
 // # Also, you should make constructive use of the isFactor function you just wrote above.
 
 
-class ismultiple {
-	public boolean fun_ismultiple(int m, int n){
-		// your code goes here
+class MyMath {
+	public boolean isMultiple(int m, int n){
+		// Your code goes here...
 		return false;
 	}
 }

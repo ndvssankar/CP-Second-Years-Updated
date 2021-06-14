@@ -18,18 +18,18 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      isfactor s = new isfactor();
-      assertEquals("1.", true, s.fun_isfactor(2,2));
-      assertEquals("2.", false, s.fun_isfactor(2,5));
-      assertEquals("3.", true, s.fun_isfactor(2,4));
+      MyMath s = new MyMath();
+      assertEquals("1.", true, s.isFactor(2,2));
+      assertEquals("2.", false, s.isFactor(2,5));
+      assertEquals("3.", true, s.isFactor(2,4));
     }
 
    @Test
    public void testCase2() {
-      isfactor s = new isfactor();
-      assertEquals("1.", false, s.fun_isfactor(0,6));
-      assertEquals("2.", true, s.fun_isfactor(6,0));
-      assertEquals("3.", true, s.fun_isfactor(0,0));
-      assertEquals("4.", true, s.fun_isfactor(-2,4));  
+      MyMath s = new MyMath();
+      assertEquals("1.", false, s.isFactor(0,6));
+      assertEquals("2.", true, s.isFactor(6,0));
+      assertEquals("3.", true, s.isFactor(0,0));
+      assertEquals("4.", true, s.isFactor(-2,4));  
    }
 }

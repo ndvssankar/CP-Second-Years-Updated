@@ -16,15 +16,15 @@ public class TestJUnit {
     IsLegalTriangle isLegalTriangle = new IsLegalTriangle();
    @Test
    public void testCase1() {
-      assertEquals(false, isLegalTriangle.isLegalTriangle(1, 2, 3));
-      assertEquals(true, isLegalTriangle.isLegalTriangle(7, 10, 5));
-      assertEquals(false, isLegalTriangle.isLegalTriangle(1, 10, 12));
+      assertEquals("1.", false, isLegalTriangle.isLegalTriangle(1, 2, 3));
+      assertEquals("2.", true, isLegalTriangle.isLegalTriangle(7, 10, 5));
+      assertEquals("3.", false, isLegalTriangle.isLegalTriangle(1, 10, 12));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(false, isLegalTriangle.isLegalTriangle(1.1, 2.1, 3.2));
-      assertEquals(true, isLegalTriangle.isLegalTriangle(7.9, 10.1, 5.9));
-      assertEquals(false, isLegalTriangle.isLegalTriangle(1.00012, 10.0009090, 12.0000001));
+      assertEquals("1.", false, isLegalTriangle.isLegalTriangle(1.1, 2.1, 3.2));
+      assertEquals("2.", true, isLegalTriangle.isLegalTriangle(7.9, 10.1, 5.9));
+      assertEquals("3.", false, isLegalTriangle.isLegalTriangle(1.00012, 10.0009090, 12.0000001));
    }
 }

@@ -4,8 +4,8 @@
 // # if x is less than the lower bound, return the lower bound, 
 // # or if x is greater than the upper bound, return the upper bound.
 
-class getinrange {
-	public int fun_getinrange(int x, int bound1, int bound2){
+class GetInRange {
+	public int getInRange(int x, int bound1, int bound2){
 		// Your code goes here
 		return -1;
 	}

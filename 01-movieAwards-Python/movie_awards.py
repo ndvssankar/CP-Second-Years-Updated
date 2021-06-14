@@ -19,3 +19,6 @@ the function should return as follows
 }
 '''
 
+def movie_awards(oscarResults):
+    # Your code goes here...
+    pass

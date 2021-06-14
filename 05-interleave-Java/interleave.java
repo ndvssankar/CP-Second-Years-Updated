@@ -6,9 +6,9 @@
 // # the string "ac#D!f2". Assume that both s1 and s2 will always be strings.
 
 
-class interleave {
-	public String fun_interleave(String s1, String s2){
+class Interleave {
+	public String interleave(String s1, String s2) {
+		//	Your code goes here....
 		return "";
 	}
-	
 }

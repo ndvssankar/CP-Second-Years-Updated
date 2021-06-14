@@ -18,19 +18,19 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      interleave s = new interleave();
+      Interleave s = new Interleave();
       
-      assertEquals("1.", "python", s.fun_interleave("pto", "yhn"));
-      assertEquals("2.",  "ac#D!f2", s.fun_interleave("a#", "cD!f2"));
-      assertEquals("3.", "hweolrllod", s.fun_interleave("hello", "world"));
+      assertEquals("1.", "python", s.interleave("pto", "yhn"));
+      assertEquals("2.",  "ac#D!f2", s.interleave("a#", "cD!f2"));
+      assertEquals("3.", "hweolrllod", s.interleave("hello", "world"));
    }
 
    @Test
    public void testCase2() {
-      interleave s = new interleave();
+      Interleave s = new Interleave();
       
-      assertEquals("1.", "ac#De!23r3f", s.fun_interleave("a#e23r3f", "cD!"));
-      assertEquals("2.", "ac#Ds!ffg2jsfdeel klsddjlf", s.fun_interleave("a#sfgjfeel klsddjlf", "cD!f2sd")); 
+      assertEquals("1.", "ac#De!23r3f", s.interleave("a#e23r3f", "cD!"));
+      assertEquals("2.", "ac#Ds!ffg2jsfdeel klsddjlf", s.interleave("a#sfgjfeel klsddjlf", "cD!f2sd")); 
    }
 }
 

@@ -13,19 +13,20 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TestJUnit {
-    IsEvenPositiveInt isEvenPositiveInt = new IsEvenPositiveInt();
    @Test
    public void testCase1() {
-      assertEquals(false, isEvenPositiveInt.isEvenPositiveInt(1));
-      assertEquals(false, isEvenPositiveInt.isEvenPositiveInt(-1));
-      assertEquals(false, isEvenPositiveInt.isEvenPositiveInt(-2));
-      assertEquals(false, isEvenPositiveInt.isEvenPositiveInt(-3));
-      assertEquals(true, isEvenPositiveInt.isEvenPositiveInt(2));
+      IsEvenPositiveInt isEvenPositiveInt = new IsEvenPositiveInt();
+      assertEquals("1.", false, isEvenPositiveInt.isEvenPositiveInt(1));
+      assertEquals("2.", false, isEvenPositiveInt.isEvenPositiveInt(-1));
+      assertEquals("3.", false, isEvenPositiveInt.isEvenPositiveInt(-2));
+      assertEquals("4.", false, isEvenPositiveInt.isEvenPositiveInt(-3));
+      assertEquals("5.", true, isEvenPositiveInt.isEvenPositiveInt(2));
    }
 
    @Test
    public void testCase2() {
-    assertEquals(false, isEvenPositiveInt.isEvenPositiveInt(3));
-    assertEquals(true, isEvenPositiveInt.isEvenPositiveInt(123456));
+      IsEvenPositiveInt isEvenPositiveInt = new IsEvenPositiveInt();
+      assertEquals("1.", false, isEvenPositiveInt.isEvenPositiveInt(3));
+      assertEquals("2.", true, isEvenPositiveInt.isEvenPositiveInt(123456));
    }
 }

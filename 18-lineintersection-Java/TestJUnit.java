@@ -13,17 +13,18 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TestJUnit {
-    LineIntersection lineIntersection = new LineIntersection();
    @Test
    public void testCase1() {
-      assertEquals(0, lineIntersection.lineIntersection(4, 13, 8, 17));
-      assertEquals(0, lineIntersection.lineIntersection(2, 13, 2, 14));
-      assertEquals(0, lineIntersection.lineIntersection(8, 13, 4, 17));
+      LineIntersection lineIntersection = new LineIntersection();
+      assertEquals("1.", 0, lineIntersection.lineIntersection(4, 13, 8, 17));
+      assertEquals("2.", 0, lineIntersection.lineIntersection(2, 13, 2, 14));
+      assertEquals("3.", 0, lineIntersection.lineIntersection(8, 13, 4, 17));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(4, lineIntersection.lineIntersection(4, 13, 3, 17));
-      assertEquals(2, lineIntersection.lineIntersection(4, 27, 9, 17));
+      LineIntersection lineIntersection = new LineIntersection();
+      assertEquals("1.", 4, lineIntersection.lineIntersection(4, 13, 3, 17));
+      assertEquals("2.", 2, lineIntersection.lineIntersection(4, 27, 9, 17));
    }
 }

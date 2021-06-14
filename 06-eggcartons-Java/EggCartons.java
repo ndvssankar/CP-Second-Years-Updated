@@ -6,10 +6,6 @@
 class EggCartons {
 	public int eggCartons(int eggs) {
 		// Your code goes here....
-		int cartoons = eggs/12;
-		if(eggs %12 != 0){
-			cartoons = cartoons+1;
-		}
-		return cartoons;
+		return 0;
 	}
 }

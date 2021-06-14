@@ -5,8 +5,8 @@
 // # so the nearest bus stop to 12th street is 8th street, 
 // # and the nearest bus stop to 13 street is 16th street.
 
-class nearestbusstop {
-	public int fun_nearestbusstop(int street){
+class NearestBusStop {
+	public int nearestBusStop(int street){
 		// your code goes here
 		return -1;
 	}

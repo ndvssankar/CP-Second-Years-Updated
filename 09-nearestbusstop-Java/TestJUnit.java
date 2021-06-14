@@ -18,18 +18,18 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      nearestbusstop s = new nearestbusstop();
-      assertEquals("1.", 8, s.fun_nearestbusstop(12));
-      assertEquals("2.", 16, s.fun_nearestbusstop(13));
-      assertEquals("3.", 8, s.fun_nearestbusstop(5));
+      NearestBusStop s = new NearestBusStop();
+      assertEquals("1.", 8, s.nearestBusStop(12));
+      assertEquals("2.", 16, s.nearestBusStop(13));
+      assertEquals("3.", 8, s.nearestBusStop(5));
     }
 
    @Test
    public void testCase2() {
-      nearestbusstop s = new nearestbusstop();
-      assertEquals("1.", 0, s.fun_nearestbusstop(4));
-      assertEquals("2.", 8, s.fun_nearestbusstop(8));
-      assertEquals("3.", 0, s.fun_nearestbusstop(0));
-      assertEquals("4.", 16, s.fun_nearestbusstop(16));  
+      NearestBusStop s = new NearestBusStop();
+      assertEquals("1.", 0, s.nearestBusStop(4));
+      assertEquals("2.", 8, s.nearestBusStop(8));
+      assertEquals("3.", 0, s.nearestBusStop(0));
+      assertEquals("4.", 16, s.nearestBusStop(16));  
    }
 }

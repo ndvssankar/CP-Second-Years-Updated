@@ -16,13 +16,12 @@ import java.beans.Transient;
 
 public class TestJUnit {
 
-
    @Test
    public void testCase1() {
       Element e1 = new Element(1);
       Element e2 = new Element(2);
       Element e3 = new Element(3);
-      stacks stack = new stacks(e1);
+      Stack stack = new Stack(e1);
       stack.push(e2);
       stack.push(e3);
       assertEquals("1.", 3, stack.pop().value);
@@ -34,9 +33,7 @@ public class TestJUnit {
    @Test
    public void testCase2() {
       Element e4 = new Element(4);
-      stacks stack = new stacks(e4);
+      Stack stack = new Stack(e4);
       assertEquals("1.", 4, stack.pop().value);  
    }
-
- 
 }

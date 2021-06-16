@@ -16,15 +16,15 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals(new Median().median(new double[]{1, 2, 3, 4, 5}), 3);
-      assertEquals(new Median().median(new double[]{1.1, 2.1, 3.1, 4.1, 5.1}), 3);
+		assertEquals("1.", 3, new Median().median(new double[]{1, 2, 3, 4, 5}));
+      assertEquals("2.", 3, new Median().median(new double[]{1.1, 2.1, 3.1, 4.1, 5.1}));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(new Median().median(new double[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}), 5);
-      assertEquals(new Median().median(new double[]{1, 2, 3, 4, 5.5, 5.1, 7, 8, 9, 10}), 5);
-      assertEquals(new Median().median(new double[]{1}), 1);
-      assertEquals(new Median().median(new double[0]), 0);
+      assertEquals("1.", 5, new Median().median(new double[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+      assertEquals("2.", 5, new Median().median(new double[]{1, 2, 3, 4, 5.5, 5.1, 7, 8, 9, 10}));
+      assertEquals("3.", 1, new Median().median(new double[]{1}));
+      assertEquals("4.", 0, new Median().median(new double[0]));
    }
 }

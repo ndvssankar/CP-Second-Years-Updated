@@ -5,7 +5,7 @@
 // learn soon, it runs in O(n) time, where n=len(a)), and so in particular you may not sort 
 // the list.
 
-public class IsSorted {
+public class Sort {
 	public boolean isSorted(double[] list) {
 		// Your code goes here
 		return false;

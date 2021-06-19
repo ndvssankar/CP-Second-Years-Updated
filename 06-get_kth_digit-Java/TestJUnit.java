@@ -18,18 +18,18 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      get_kth_digit s = new get_kth_digit();
-      assertEquals("1.", 9, s.fun_get_kth_digit(789,0));
-      assertEquals("2.", 8, s.fun_get_kth_digit(789,1));
-      assertEquals("3.", 7, s.fun_get_kth_digit(789,2));
+      MyMath s = new MyMath();
+      assertEquals("1.", 9, s.getKthDigit(789,0));
+      assertEquals("2.", 8, s.getKthDigit(789,1));
+      assertEquals("3.", 7, s.getKthDigit(789,2));
     }
 
    @Test
    public void testCase2() {
-      get_kth_digit s = new get_kth_digit();
-      assertEquals("1.", 0, s.fun_get_kth_digit(789,3));
-      assertEquals("2.", 9, s.fun_get_kth_digit(-789, 0));
-      assertEquals("3.", 0, s.fun_get_kth_digit(-789, 4));
+      MyMath s = new MyMath();
+      assertEquals("1.", 0, s.getKthDigit(789,3));
+      assertEquals("2.", 9, s.getKthDigit(-789, 0));
+      assertEquals("3.", 0, s.getKthDigit(-789, 4));
    }
 }
 

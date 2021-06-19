@@ -1,6 +1,5 @@
 from isLegalSudoku import *
 
-
 print()
 print ("Checking areLegalValues function...")
 

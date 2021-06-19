@@ -18,20 +18,20 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      pascaltrianglevalue s = new pascaltrianglevalue();
-      assertEquals("1.", 1, s.fun_pascaltrianglevalue(1,1));
-      assertEquals("2.", 0, s.fun_pascaltrianglevalue(3,5));
-      assertEquals("3.", 3, s.fun_pascaltrianglevalue(3,1));
-      assertEquals("4.", 10, s.fun_pascaltrianglevalue(5,2));
+      PascalTriangle s = new PascalTriangle();
+      assertEquals("1.", 1, s.pascalsTriangleValue(1,1));
+      assertEquals("2.", 0, s.pascalsTriangleValue(3,5));
+      assertEquals("3.", 3, s.pascalsTriangleValue(3,1));
+      assertEquals("4.", 10, s.pascalsTriangleValue(5,2));
     }
 
    @Test
    public void testCase2() {
-      pascaltrianglevalue s = new pascaltrianglevalue();
-      assertEquals("1.", 20, s.fun_pascaltrianglevalue(6, 3));
-      assertEquals("2.", 15, s.fun_pascaltrianglevalue(6, 2));
-      assertEquals("3.", 35, s.fun_pascaltrianglevalue(7, 4));
-      assertEquals("4.", 0, s.fun_pascaltrianglevalue(7, 9));  
+      PascalTriangle s = new PascalTriangle();
+      assertEquals("1.", 20, s.pascalsTriangleValue(6, 3));
+      assertEquals("2.", 15, s.pascalsTriangleValue(6, 2));
+      assertEquals("3.", 35, s.pascalsTriangleValue(7, 4));
+      assertEquals("4.", 0, s.pascalsTriangleValue(7, 9));  
    }
 }
 

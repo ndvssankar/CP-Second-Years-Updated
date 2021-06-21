@@ -15,13 +15,14 @@ isLegalSudoku(board): This function takes a Sudoku board (which you may assume i
 '''
 def areLegalValues(values):
     N = len(values)
+    s = set()
     for value in values:
-        if value < 0:
+        if value < 0 or value > N or value in s:
             return False
-        if value == 0:
+        elif value == 0:
             continue
-        if value < 1 or value > N or values.count(value) != 1:
-            return False
+        else:
+            s.add(value)
     return True
 
 '''

@@ -30,4 +30,14 @@ American City
 Asian City - Country
 Asian City - Country"""
 
+
+def sortUSA():
+    '''Return all the cities in the USA in alphabetical order'''
+    pass
+
+def alphaAsia():
+    '''Return all the cities in Asia continent in alphabetical order'''
+    pass
+
+# Note: Check for test cases to understand the output format.
 locations = {'North America': {'USA': ['Mountain View']}}

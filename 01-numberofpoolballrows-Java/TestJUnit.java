@@ -1,5 +1,5 @@
 /**
- * This is JUnit that tests the sleepIn method that is available in SleepIn class.
+ * This is JUnit that tests the number of pool ball rows in a PoolBall game.
  * This contains 4 testcases.
  * 
  * Please don't run this file.

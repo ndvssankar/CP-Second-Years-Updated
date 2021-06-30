@@ -16,12 +16,13 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
 	public void testCase1() {
-		assertEquals("1.", false, new IsPerfectSquare().isPerfectSquare(-625));
-		assertEquals("2.", true, new IsPerfectSquare().isPerfectSquare(625));
-		assertEquals("3.", true, new IsPerfectSquare().isPerfectSquare(4));
-		assertEquals("4.", true, new IsPerfectSquare().isPerfectSquare(100));
-		assertEquals("5.", false, new IsPerfectSquare().isPerfectSquare(1100));
-		assertEquals("6.", false, new IsPerfectSquare().isPerfectSquare(-100));
-		assertEquals("7.", true, new IsPerfectSquare().isPerfectSquare(0));
+		MyMath mm = new MyMath();
+		assertEquals("1.", false, mm.isPerfectSquare(-625));
+		assertEquals("2.", true, mm.isPerfectSquare(625));
+		assertEquals("3.", true, mm.isPerfectSquare(4));
+		assertEquals("4.", true, mm.isPerfectSquare(100));
+		assertEquals("5.", false, mm.isPerfectSquare(1100));
+		assertEquals("6.", false, mm.isPerfectSquare(-100));
+		assertEquals("7.", true, mm.isPerfectSquare(0));
 	}
 }

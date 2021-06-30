@@ -16,17 +16,19 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
+		HashtablePlay hPlay = new HashtablePlay();
    		List<String> location = new ArrayList<String>();
    		location.add("Bangalore - India");
    		location.add("Shanghai - China");
-		assertEquals(new PythonDictionaries().alphaUSA(), location);
+		assertEquals("1.", location, hPlay.alphaUSA());
    }
 
    @Test
    public void testCase2() {
+		HashtablePlay hPlay = new HashtablePlay();
    		List<String> location = new ArrayList<String>();
    		location.add("Atlanta");
    		location.add("Mountain View");
-		assertEquals(new PythonDictionaries().sortAsia(), location);
+		assertEquals("1.", location, hPlay.sortAsia());
    }
 }

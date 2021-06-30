@@ -1,5 +1,5 @@
-// Time to play with Python dictionaries!
-// You're going to work on a dictionary that
+// Time to play with Java's Hashtables.
+// You're going to work on a Hashtable that
 // stores cities by country and continent.
 // One is done for you - the city of Mountain 
 // View is in the USA, which is in North America.
@@ -28,12 +28,15 @@
 // 2
 // Asian City - Country
 // Asian City - Country
-import java.util.*;
-public class PythonDictionaries {
 
-	public PythonDictionaries() {
+import java.util.*;
+
+public class HashtablePlay {
+
+	public HashtablePlay() {
 		// Your code goes here
 	}
+
 	public List<String> alphaUSA() {
 		// Your code goes here
 		return null;
@@ -43,5 +46,4 @@ public class PythonDictionaries {
 		// Your code goes here
 		return null;
 	}
-	
 }

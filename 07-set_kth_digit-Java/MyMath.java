@@ -21,7 +21,6 @@ public class MyMath {
 	 */
 	public int setKthDigit(int n, int k, int d) {
 		// Your code goes here...
-		
 		return 0;
 	}
 }

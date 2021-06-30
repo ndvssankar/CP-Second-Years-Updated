@@ -1,5 +1,5 @@
 /**
- * This is a TestRunner class which picks the test cases from the JUnit
+ * This is TestRunner class which picks the test cases from the JUnit
  * and executes each test case.
  * 
  * This will shows an output on the console about how many test cases
@@ -30,7 +30,8 @@ public class TestRunner {
          for (Failure failure : result.getFailures()) {
             int index = failure.getDescription().toString().indexOf("(");
             String msg = failure.getMessage();
-            msg = msg.substring(0, 2);
+            int idx = msg.indexOf(".");
+            msg = msg.substring(0, idx);
             System.out.println("Test Case : " + failure.getDescription().toString().substring(8, index) + "." + msg);
             int start = failure.getMessage().indexOf("<");
             int end = failure.getMessage().indexOf(">");

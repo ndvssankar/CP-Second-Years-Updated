@@ -1,12 +1,13 @@
 /**
- * This is JUnit that tests the methods of the Clock.
+ * This JUnit tests the methods of the MyMath class methods.
  * This contains 2 testcases.
  * 
  * Please don't run this file.
  * You can add your own test cases to this file by just copy and 
- * paste the last three lines of the code (TestCase2).
+ * paste the last three lines of the code (TestCase3).
  * 
  * @author: Deepak
+ * @author: Siva Sankar
  */
 
 import org.junit.Test;
@@ -18,16 +19,16 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      threelines_area s = new threelines_area();
-      assertEquals("1.", 6, s.fun_threelines_area(5,3,4));
-      assertEquals("2.", 5, s.fun_threelines_area(4,4,3));
+      MyMath s = new MyMath();
+      assertEquals("1.", 6, s.threeLinesArea(5,3,4));
+      assertEquals("2.", 5, s.threeLinesArea(4,4,3));
    }
 
    @Test
    public void testCase2() {
-      threelines_area s = new threelines_area();
-      assertEquals("1.", 39, s.fun_threelines_area(12,10,8));
-      assertEquals("2.", 65, s.fun_threelines_area(16,12,11));
+      MyMath s = new MyMath();
+      assertEquals("1.", 39, s.threeLinesArea(12,10,8));
+      assertEquals("2.", 65, s.threeLinesArea(16,12,11));
    }
 }
 

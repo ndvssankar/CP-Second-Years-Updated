@@ -6,18 +6,16 @@
 # yards of fabric that must be purchased.
 
 # fabricexcess(inches)
-# Write the function fabricExcess(inches) that takes the number of 
+# Write the function fabricexcess(inches) that takes the number of 
 # inches of fabric desired and returns the number of inches of excess 
-# fabric that must be purchased (as purchases must be in whole yards)
-# . Hint: you may want to use fabricYards, which you just wrote!
+# fabric that must be purchased (as purchases must be in whole yards).
+# Hint: you may want to use fabricyards, which you just wrote!
 
 
-def fun_fabricyards(inches):
-	# your code goes here
+def fabricyards(inches):
+	# Your code goes here...
 	return 1
 
-def fun_fabricexcess(inches):
-	# your code goes here
+def fabricexcess(inches):
+	# Your code goes here...
 	return 1
-
-

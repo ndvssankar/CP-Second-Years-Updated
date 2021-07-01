@@ -16,7 +16,7 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals("1.", -2, new MyMath().digitCount(-24));
+		assertEquals("1.", 2, new MyMath().digitCount(-24));
       assertEquals("2.", 1, new MyMath().digitCount(0));
       assertEquals("3.", 2, new MyMath().digitCount(26));
       assertEquals("4.", 8, new MyMath().digitCount(-52311231));

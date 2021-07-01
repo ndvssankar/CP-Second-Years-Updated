@@ -13,17 +13,18 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TestJUnit {
-    TriangleAreaByCoordinates triangleAreaByCoordinates = new TriangleAreaByCoordinates();
+   TriangleAreaByCoordinates ta = new TriangleAreaByCoordinates();
+   
    @Test
    public void testCase1() {
-      assertEquals(222, triangleAreaByCoordinates.triangleAreaByCoordinates(23, 30, 15, 15, 50, 25));
-      assertEquals(127, triangleAreaByCoordinates.triangleAreaByCoordinates(23, 30, 15, 15, 32, 15));
-      assertEquals(170, triangleAreaByCoordinates.triangleAreaByCoordinates(15, 35, 15, 15, 32, 15));
+      assertEquals("1.", 222, ta.triangleAreaByCoordinates(23, 30, 15, 15, 50, 25));
+      assertEquals("2.", 127, ta.triangleAreaByCoordinates(23, 30, 15, 15, 32, 15));
+      assertEquals("3.", 170, ta.triangleAreaByCoordinates(15, 35, 15, 15, 32, 15));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(190, triangleAreaByCoordinates.triangleAreaByCoordinates(25, 35, 15, 15, 34, 15));
-      assertEquals(19, triangleAreaByCoordinates.triangleAreaByCoordinates(25, 17, 15, 15, 34, 15));
+      assertEquals("1.", 190, ta.triangleAreaByCoordinates(25, 35, 15, 15, 34, 15));
+      assertEquals("2.", 19, ta.triangleAreaByCoordinates(25, 17, 15, 15, 34, 15));
    }
 }

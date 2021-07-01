@@ -1,12 +1,14 @@
 /**
- * This is JUnit that tests the methods of the Clock.
+ * This JUnit tests the MyMath class methods.
  * This contains 2 testcases.
  * 
  * Please don't run this file.
- * You can add your own test cases to this file by just copy and 
- * paste the last three lines of the code (TestCase2).
+ * You can add your own test cases to this file by just copy 
+ * and paste the testcase2 along with the annotation @test and
+ * change the copied testcase2 to testcase3
  * 
  * @author: Deepak
+ * @author: Siva Sankar
  */
 
 import org.junit.Test;
@@ -18,22 +20,20 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      nth_happy_number s = new nth_happy_number();
-      
-      assertEquals("1.", 1, s.fun_nth_happy_number(0));
-      assertEquals("2.", 7, s.fun_nth_happy_number(1));
-      assertEquals("3.", 10, s.fun_nth_happy_number(2));
-      assertEquals("4.", 13, s.fun_nth_happy_number(3));
+      HappyNumber s = new HappyNumber();
+      assertEquals("1.", 1, s.nthHappyNumber(1));
+      assertEquals("2.", 7, s.nthHappyNumber(2));
+      assertEquals("3.", 10, s.nthHappyNumber(3));
+      assertEquals("4.", 13, s.nthHappyNumber(4));
    }
 
    @Test
    public void testCase2() {
-      nth_happy_number s = new nth_happy_number();
-      
-      assertEquals("1.", 19, s.fun_nth_happy_number(4));
-      assertEquals("2.", 23, s.fun_nth_happy_number(5)); 
-      assertEquals("3.", 28, s.fun_nth_happy_number(6)); 
-      assertEquals("4.", 31, s.fun_nth_happy_number(7)); 
+      HappyNumber s = new HappyNumber();
+      assertEquals("1.", 19, s.nthHappyNumber(5));
+      assertEquals("2.", 23, s.nthHappyNumber(6)); 
+      assertEquals("3.", 28, s.nthHappyNumber(7)); 
+      assertEquals("4.", 31, s.nthHappyNumber(8)); 
    }
 }
 

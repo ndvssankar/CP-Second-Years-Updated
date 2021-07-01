@@ -17,15 +17,15 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals(new LargestPerfectSquare().largestPerfectSquare(24), 16);
-      assertEquals(new LargestPerfectSquare().largestPerfectSquare(25), 25);
-      assertEquals(new LargestPerfectSquare().largestPerfectSquare(26), 25);
+		assertEquals(new MyMath().largestPerfectSquare(24), 16);
+      assertEquals(new MyMath().largestPerfectSquare(25), 25);
+      assertEquals(new MyMath().largestPerfectSquare(26), 25);
    }
 
    @Test
    public void testCase2() {
-      assertEquals(new LargestPerfectSquare().largestPerfectSquare(14), 9);
-      assertEquals(new LargestPerfectSquare().largestPerfectSquare(2), 1);
-      assertEquals(new LargestPerfectSquare().largestPerfectSquare(5), 4);
+      assertEquals(new MyMath().largestPerfectSquare(14), 9);
+      assertEquals(new MyMath().largestPerfectSquare(2), 1);
+      assertEquals(new MyMath().largestPerfectSquare(5), 4);
    }
 }

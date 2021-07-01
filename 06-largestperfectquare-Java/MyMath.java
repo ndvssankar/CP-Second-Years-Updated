@@ -7,7 +7,7 @@
 // Hint: you may wish to use a similar approach to how you solved isPerfectSquare on the hw.
 // Another hint: This can be written using just one or two lines of Python.
 
-public class LargestPerfectSquare {
+public class MyMath {
 	public int largestPerfectSquare(int n) {
 		// Your code goes here
 		return 1;

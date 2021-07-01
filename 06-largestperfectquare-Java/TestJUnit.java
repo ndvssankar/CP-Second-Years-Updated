@@ -1,13 +1,14 @@
 /**
- * This is JUnit that tests the sleepIn method that is available in SleepIn class.
+ * This JUnit tests the MyMath class methods.
  * This contains 4 testcases.
  * 
  * Please don't run this file.
- * You can add your own test cases to this file by just copy and paste the last three 
- * lines of the code (TestCase4).
+ * You can add your own test cases to this file by just copy 
+ * and paste the testcase2 along with the annotation @test
  * 
  * @author: Siva Sankar
  */
+
 
 import org.junit.Test;
 import java.util.*;

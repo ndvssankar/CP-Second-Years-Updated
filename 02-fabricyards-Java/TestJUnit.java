@@ -1,5 +1,5 @@
 /**
- * This is JUnit that tests the methods of the Clock.
+ * This JUnit tests the methods of the FabricUtil.
  * This contains 2 testcases.
  * 
  * Please don't run this file.
@@ -7,6 +7,7 @@
  * paste the last three lines of the code (TestCase2).
  * 
  * @author: Deepak
+ * @author: Siva Sankar
  */
 
 import org.junit.Test;
@@ -18,28 +19,28 @@ public class TestJUnit {
 
    @Test
    public void testCase1() {
-      fabricyards s = new fabricyards();
-      assertEquals("1.", 0, s.fun_fabricyards(0));
-      assertEquals("2.", 1, s.fun_fabricyards(1));
-      assertEquals("3.", 1, s.fun_fabricyards(35));
-      assertEquals("4.", 1, s.fun_fabricyards(36));
-      assertEquals("5.", 2, s.fun_fabricyards(37));
-      assertEquals("6.", 2, s.fun_fabricyards(38));
-      assertEquals("7.", 2, s.fun_fabricyards(72));
-      assertEquals("8.", 3, s.fun_fabricyards(73));
+      FabricUitl s = new FabricUitl();
+      assertEquals("1.", 0, s.fabricYards(0));
+      assertEquals("2.", 1, s.fabricYards(1));
+      assertEquals("3.", 1, s.fabricYards(35));
+      assertEquals("4.", 1, s.fabricYards(36));
+      assertEquals("5.", 2, s.fabricYards(37));
+      assertEquals("6.", 2, s.fabricYards(38));
+      assertEquals("7.", 2, s.fabricYards(72));
+      assertEquals("8.", 3, s.fabricYards(73));
    }
 
    @Test
    public void testCase2() {
-      fabricyards s = new fabricyards();
-      assertEquals("1.", 0, s.fun_fabricexcess(0));
-      assertEquals("2.", 35, s.fun_fabricexcess(1));
-      assertEquals("3.", 1, s.fun_fabricexcess(35));
-      assertEquals("4.", 0, s.fun_fabricexcess(36));
-      assertEquals("5.", 35, s.fun_fabricexcess(37));
-      assertEquals("6.", 34, s.fun_fabricexcess(38));
-      assertEquals("7.", 0, s.fun_fabricexcess(72));
-      assertEquals("8.", 35, s.fun_fabricexcess(73));
+      FabricUitl s = new FabricUitl();
+      assertEquals("1.", 0, s.fabricExcess(0));
+      assertEquals("2.", 35, s.fabricExcess(1));
+      assertEquals("3.", 1, s.fabricExcess(35));
+      assertEquals("4.", 0, s.fabricExcess(36));
+      assertEquals("5.", 35, s.fabricExcess(37));
+      assertEquals("6.", 34, s.fabricExcess(38));
+      assertEquals("7.", 0, s.fabricExcess(72));
+      assertEquals("8.", 35, s.fabricExcess(73));
    }
 }
 

@@ -1,6 +1,6 @@
 /**
  * This JUnit tests the MyMath class methods.
- * This contains 4 testcases.
+ * This contains 2 testcases.
  * 
  * Please don't run this file.
  * You can add your own test cases to this file by just copy

@@ -16,18 +16,18 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals("1, ", 2, new MostFrequentDigit().mostFrequentDigit(24));
-      assertEquals("2, ", 0, new MostFrequentDigit().mostFrequentDigit(0));
-      assertEquals("3, ", 1, new MostFrequentDigit().mostFrequentDigit(26011));
-      assertEquals("4, ", 0, new MostFrequentDigit().mostFrequentDigit(1102300));
+		assertEquals("1.", 2, new MyMath().mostFrequentDigit(24));
+      assertEquals("2.", 0, new MyMath().mostFrequentDigit(0));
+      assertEquals("3.", 1, new MyMath().mostFrequentDigit(26011));
+      assertEquals("4.", 0, new MyMath().mostFrequentDigit(1102300));
    }
 
    @Test
    public void testCase2() {
-      assertEquals("1, ", 1, new MostFrequentDigit().mostFrequentDigit(14));
-      assertEquals("2, ", 2, new MostFrequentDigit().mostFrequentDigit(2));
-      assertEquals("3, ", 5, new MostFrequentDigit().mostFrequentDigit(5));
-      assertEquals("4, ", 1, new MostFrequentDigit().mostFrequentDigit(52311231));
-      assertEquals("5, ", 5, new MostFrequentDigit().mostFrequentDigit(52355235));
+      assertEquals("1.", 1, new MyMath().mostFrequentDigit(14));
+      assertEquals("2.", 2, new MyMath().mostFrequentDigit(2));
+      assertEquals("3.", 5, new MyMath().mostFrequentDigit(5));
+      assertEquals("4.", 1, new MyMath().mostFrequentDigit(52311231));
+      assertEquals("5.", 5, new MyMath().mostFrequentDigit(52355235));
    }
 }

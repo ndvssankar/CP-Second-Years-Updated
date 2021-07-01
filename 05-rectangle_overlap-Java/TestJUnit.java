@@ -4,7 +4,7 @@
  * 
  * Please don't run this file.
  * You can add your own test cases to this file by just copy and 
- * paste the last three lines of the code (TestCase3).
+ * paste the TestCase2 including the annotation @test.
  * 
  * @author: Deepak
  * @author: Siva Sankar

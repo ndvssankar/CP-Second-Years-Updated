@@ -19,7 +19,7 @@ public class TestJUnit {
    @Test
    public void testCase1() {
       wordwrap s = new wordwrap();
-      assertEquals("1.",  "a-b-\nc-de\n-fgh", s.fun_wordwrap(" a b c de fgh ",  4));
+      assertEquals("1.", "a-b-\nc-de\n-fgh", s.fun_wordwrap(" a b c de fgh ",  4));
      
    }
 

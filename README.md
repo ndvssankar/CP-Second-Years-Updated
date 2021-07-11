@@ -1,1 +1,1 @@
-# CheckCp
+# https://en.wikipedia.org/wiki/Magic_square

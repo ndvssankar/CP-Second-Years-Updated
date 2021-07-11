@@ -1,1 +1,1 @@
-# CheckCp
+# nQueensChecker

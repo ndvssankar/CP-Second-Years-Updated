@@ -1,5 +1,5 @@
 /**
- * This is JUnit that tests the methods of the Clock.
+ * This is JUnit that tests the methods of the nth_carolprime.
  * This contains 2 testcases.
  * 
  * Please don't run this file.

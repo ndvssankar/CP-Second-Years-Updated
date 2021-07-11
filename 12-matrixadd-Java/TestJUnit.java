@@ -1,10 +1,10 @@
 /**
- * This is JUnit that tests the sleepIn method that is available in SleepIn class.
- * This contains 4 testcases.
+ * This is JUnit that tests the method that is available in MatrixAdd class.
+ * This contains 1 testcases.
  * 
  * Please don't run this file.
  * You can add your own test cases to this file by just copy and paste the last three 
- * lines of the code (TestCase4).
+ * lines of the code (TestCase1).
  * 
  * @author: Siva Sankar
  */

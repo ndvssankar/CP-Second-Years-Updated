@@ -8,8 +8,8 @@
 // assert(recursion_secondlargest([4,3]) == 3)
 // assert(recursion_secondlargest([4,4,3]) == 4)
 // assert(recursion_secondlargest([-3,-4]) == -4)
-// assert(recursion_secondlargest([4]) == None)
-// assert(recursion_secondlargest([ ]) == None)
+// assert(recursion_secondlargest([4]) == null)
+// assert(recursion_secondlargest([ ]) == null)
 // Again, you do not need to sort the list. We didn't sort it in our sample solution. We just tracked the two largest 
 // values as we recursively traversed the list. Also, you may not use loops/iteration in this problem
 

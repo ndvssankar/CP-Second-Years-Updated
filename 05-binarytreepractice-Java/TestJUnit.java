@@ -20,31 +20,31 @@ public class TestJUnit {
    	s.root.right = new Node(3);
    	s.root.left.left = new Node(4);
    	s.root.left.right = new Node(5);
-   	assertEquals(s.search(4), true);
-   	assertEquals(s.search(6), false);
+   	assertEquals("1.", true, s.search(4));
+   	assertEquals("2.", false, s.search(6));
    }
     @Test
    public void testCase2() {
    	BinaryTree s = new BinaryTree(1);
-   	assertEquals(s.search(4), false);
-   	assertEquals(s.search(1), true);
+   	assertEquals("1.", false, s.search(4));
+   	assertEquals("2.", true, s.search(1));
    }
     @Test
    public void testCase3() {
    	BinaryTree s = new BinaryTree(1);
-    s.root.left = new Node(1);  
-    s.root.left.left = new Node(3);  
-    s.root.left.left.left = new Node(7);  
-    s.root.left.right = new Node(4);  
-    s.root.left.right.left = new Node(8);  
-    s.root.left.right.right = new Node(9);  
-    s.root.right = new Node(2);  
-    s.root.right.left = new Node(5);  
-    s.root.right.right = new Node(6);  
-   	assertEquals(s.search(4), true);
-   	assertEquals(s.search(6), true);
-   	assertEquals(s.search(16), false);
-   	assertEquals(s.search(8), true);
+      s.root.left = new Node(1);  
+      s.root.left.left = new Node(3);  
+      s.root.left.left.left = new Node(7);  
+      s.root.left.right = new Node(4);  
+      s.root.left.right.left = new Node(8);  
+      s.root.left.right.right = new Node(9);  
+      s.root.right = new Node(2);  
+      s.root.right.left = new Node(5);  
+      s.root.right.right = new Node(6);  
+   	assertEquals("1.", true, s.search(4));
+   	assertEquals("2.", true, s.search(6));
+   	assertEquals("3.", false, s.search(16));
+   	assertEquals("4.", true, s.search(8));
    }
   
 }

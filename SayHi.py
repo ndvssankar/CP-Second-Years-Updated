@@ -6,4 +6,3 @@
 
 class SayHi(Object):
     pass
-

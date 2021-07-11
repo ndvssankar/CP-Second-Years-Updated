@@ -1,1 +1,1 @@
-# CheckCp
+# IsKnightsTour

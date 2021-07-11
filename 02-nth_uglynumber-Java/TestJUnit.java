@@ -23,7 +23,7 @@ public class TestJUnit {
       assertEquals("1.", 1, s.fun_nth_uglynumber(0));
       assertEquals("2.", 2, s.fun_nth_uglynumber(1));
       assertEquals("3.", 3, s.fun_nth_uglynumber(2));
-      assertEquals("3.", 6, s.fun_nth_uglynumber(5));
+      assertEquals("4.", 6, s.fun_nth_uglynumber(5));
    }
 
    
@@ -33,8 +33,8 @@ public class TestJUnit {
       
       assertEquals("1.", 15, s.fun_nth_uglynumber(10));
       assertEquals("2.", 60, s.fun_nth_uglynumber(25)); 
-      assertEquals("2.", 250, s.fun_nth_uglynumber(50)); 
-      assertEquals("3.", 1600, s.fun_nth_uglynumber(100)); 
+      assertEquals("3.", 250, s.fun_nth_uglynumber(50)); 
+      assertEquals("4.", 1600, s.fun_nth_uglynumber(100)); 
    }
 }
 

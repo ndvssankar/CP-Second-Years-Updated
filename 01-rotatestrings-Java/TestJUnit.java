@@ -19,8 +19,8 @@ public class TestJUnit {
    @Test
    public void testCase1() {
       rotatestrings s = new rotatestrings();
-      assertEquals("1.",  "dabc", s.fun_rotatestrings("abcd", -1));
-      assertEquals("2.",  "bcda", s.fun_rotatestrings("abcd", 1));
+      assertEquals("1.", "dabc", s.fun_rotatestrings("abcd", -1));
+      assertEquals("2.", "bcda", s.fun_rotatestrings("abcd", 1));
       assertEquals("3.", "cdab", s.fun_rotatestrings("abcd", -6));
    }
 
@@ -29,7 +29,7 @@ public class TestJUnit {
    public void testCase2() {
       rotatestrings s = new rotatestrings();
       assertEquals("1.", "dabc", s.fun_rotatestrings("abcd", 3));
-      assertEquals("2.",  "23ac3", s.fun_rotatestrings("ac323", 8));
+      assertEquals("2.", "23ac3", s.fun_rotatestrings("ac323", 8));
       assertEquals("3.", "ac232", s.fun_rotatestrings("ac232", 0)); 
    }
 }

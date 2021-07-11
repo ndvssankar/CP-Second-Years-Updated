@@ -4,6 +4,8 @@
 # the resource here. If n is not a positive odd integer, 
 # return None.
 
+# URL: https://en.wikipedia.org/wiki/Magic_square
+
 # Hints: From Geeks for Geeks.
 # Did you find any pattern in which the numbers are stored? 
 

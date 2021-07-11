@@ -36,7 +36,7 @@ public class TestJUnit {
       int[] arr3 = {81,23,90,134};
       assertEquals("1.", 13, s.fun_recursions_alternatingsum(arr1));
       assertEquals("2.",  32, s.fun_recursions_alternatingsum(arr2));
-      assertEquals("2.",  14, s.fun_recursions_alternatingsum(arr3));
+      assertEquals("3.",  14, s.fun_recursions_alternatingsum(arr3));
    }
 }
 

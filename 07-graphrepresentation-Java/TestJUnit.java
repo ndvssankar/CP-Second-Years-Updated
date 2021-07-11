@@ -6,7 +6,7 @@
  * You can add your own test cases to this file by just copy and 
  * paste the last three lines of the code (TestCase2).
  * 
- * @author: Siva Sankar
+ * @author: Deepak
  */
 
 import org.junit.Test;
@@ -78,6 +78,4 @@ public class TestJUnit {
           assertEquals((i+"."), a.get(i).toString(), r.get(i).toString());
       }
    }
-
-   
 }

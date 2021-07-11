@@ -1,1 +1,1 @@
-# CheckCp
+# Are anagrams

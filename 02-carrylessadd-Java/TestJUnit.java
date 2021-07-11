@@ -16,14 +16,14 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals(new carrylessadd().fun_carrylessadd(1,2), 3);
-      assertEquals(new carrylessadd().fun_carrylessadd(785, 376), 51);
-      assertEquals(new carrylessadd().fun_carrylessadd(99, 1), 90);
+		assertEquals("1.", 3, new carrylessadd().fun_carrylessadd(1,2));
+      assertEquals("2.", 51, new carrylessadd().fun_carrylessadd(785, 376));
+      assertEquals("3.", 90, new carrylessadd().fun_carrylessadd(99, 1));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(new carrylessadd().fun_carrylessadd(33,77), 0);
-      assertEquals(new carrylessadd().fun_carrylessadd(121,0), 121);
+      assertEquals("1.", 0, new carrylessadd().fun_carrylessadd(33,77));
+      assertEquals("2.", 121, new carrylessadd().fun_carrylessadd(121,0));
    }
 }

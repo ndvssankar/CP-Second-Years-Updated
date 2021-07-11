@@ -15,17 +15,17 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-      assertEquals(new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'a'), "[(2, f), (0, a)]");
-      assertEquals(new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'c'), "[(2, f), (0, a), (1, c)]");
-      assertEquals(new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'f'), "[(2, f)]");
-      assertEquals(new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'g'), "[(2, f), (4, m), (3, g)]");
+      assertEquals("1.", "[(2, f), (0, a)]", new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'a'));
+      assertEquals("2.", "[(2, f), (0, a), (1, c)]", new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'c'));
+      assertEquals("3.", "[(2, f)]", new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'f'));
+      assertEquals("4.", "[(2, f), (4, m), (3, g)]", new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'g'));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'm'), "[(2, f), (4, m)]");
-      assertEquals(new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'q'), "[(2, f), (4, m), (5, q)]");
-      assertEquals(new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'z'), "[(2, f), (4, m), (5, q)]");
-      assertEquals(new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'b'), "[(2, f), (0, a), (1, c)]");
+      assertEquals("1.", "[(2, f), (4, m)]", new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'm'));
+      assertEquals("2.", "[(2, f), (4, m), (5, q)]", new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'q'));
+      assertEquals("3.", "[(2, f), (4, m), (5, q)]", new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'z'));
+      assertEquals("4.", "[(2, f), (0, a), (1, c)]", new BinarySearchValues().binarySearchValues(new char[]{'a', 'c', 'f', 'g', 'm', 'q'}, 'b'));
    }
 }

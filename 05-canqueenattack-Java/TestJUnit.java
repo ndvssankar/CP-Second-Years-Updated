@@ -15,20 +15,20 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-      assertEquals(new CanQueenAttack().canQueenAttack(4, 5, 6, 7), true);
-      assertEquals(new CanQueenAttack().canQueenAttack(1, 1, 3, 2), false);
-      assertEquals(new CanQueenAttack().canQueenAttack(1, 1, 4, 6), false);
-      assertEquals(new CanQueenAttack().canQueenAttack(1, 1, 4, 6), false);
-      assertEquals(new CanQueenAttack().canQueenAttack(2, 3, 4, 5), true);
+      assertEquals("1.", true, new CanQueenAttack().canQueenAttack(4, 5, 6, 7));
+      assertEquals("2.", false, new CanQueenAttack().canQueenAttack(1, 1, 3, 2));
+      assertEquals("3.", false, new CanQueenAttack().canQueenAttack(1, 1, 4, 6));
+      assertEquals("4.", false, new CanQueenAttack().canQueenAttack(1, 1, 4, 6));
+      assertEquals("5.", true, new CanQueenAttack().canQueenAttack(2, 3, 4, 5));
    }
 
   @Test
    public void testCase2() {
-      assertEquals(new CanQueenAttack().canQueenAttack(1, 1, 1, 2), true);
-      assertEquals(new CanQueenAttack().canQueenAttack(1, 1, 5, 7), false);
-      assertEquals(new CanQueenAttack().canQueenAttack(2, 2, 5, 4), false);
-      assertEquals(new CanQueenAttack().canQueenAttack(1, 2, 3, 4), true);
-      assertEquals(new CanQueenAttack().canQueenAttack(3, 4, 5, 6), true);
+      assertEquals("1.", true, new CanQueenAttack().canQueenAttack(1, 1, 1, 2));
+      assertEquals("2.", false, new CanQueenAttack().canQueenAttack(1, 1, 5, 7));
+      assertEquals("3.", false, new CanQueenAttack().canQueenAttack(2, 2, 5, 4));
+      assertEquals("4.", true, new CanQueenAttack().canQueenAttack(1, 2, 3, 4));
+      assertEquals("5.", true, new CanQueenAttack().canQueenAttack(3, 4, 5, 6));
    }
 
 }

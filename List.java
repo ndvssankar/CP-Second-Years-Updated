@@ -8,7 +8,6 @@
 // assert(nondestructiveRemoveRepeats([1, 5, 3, 3, 2, 1, 7, 5]) == [1, 5, 3, 2, 7])
 // assert(nondestructiveRemoveRepeats([1, 2, 3, 5, 3, 3, 2, 1, 7, 5]) == [1, 2, 3, 5, 7])
 
-
 public class List {
     public int[] nonDestructiveRemoveRepeats(int[] arr) {
         // Your code goes here....

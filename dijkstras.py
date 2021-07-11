@@ -31,7 +31,8 @@
 #  0 to 6 (1.51)  0->2  0.26   2->7  0.34   7->3  0.39   3->6  0.52
 #  0 to 7 (0.60)  0->2  0.26   2->7  0.34
 
-class ShortestPaths:
+class ShortestPaths {
     # Your code goes here...
+}
 
 # Pleae go through the module resources which you can find in the week - 3 Day - 1

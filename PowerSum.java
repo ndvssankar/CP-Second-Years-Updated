@@ -12,4 +12,8 @@
 
 public class PowerSum {
     // Your code goes here...
+
+    public static void main(String[] args) {
+        // Write your own test cases...
+    }
 }

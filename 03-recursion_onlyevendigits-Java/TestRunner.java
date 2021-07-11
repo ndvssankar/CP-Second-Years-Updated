@@ -1,7 +1,13 @@
 /**
- *
- * Please don't modify the code.
- * @author Deepak
+ * This is TestRunner class which picks the test cases from the JUnit
+ * and executes each test case.
+ * 
+ * This will shows an output on the console about how many test cases
+ * passed / failed when you run this TestRunner class.
+ * 
+ * There will be a detailed information about which test cases have been failed or passed.
+ * 
+ * @author: Siva Sankar
  */
 
 import org.junit.runner.JUnitCore;
@@ -23,13 +29,16 @@ public class TestRunner {
          System.out.println("===============================");
          for (Failure failure : result.getFailures()) {
             int index = failure.getDescription().toString().indexOf("(");
-            System.out.println("Test Case : " + failure.getDescription().toString().substring(8, index));
+            String msg = failure.getMessage();
+            int idx = msg.indexOf(".");
+            msg = msg.substring(0, idx);
+            System.out.println("Test Case : " + failure.getDescription().toString().substring(8, index) + "." + msg);
             int start = failure.getMessage().indexOf("<");
             int end = failure.getMessage().indexOf(">");
-            System.out.println("Your Output : " + failure.getMessage().substring(start+1, end));
+            System.out.println("Expected Output : " + failure.getMessage().substring(start+1, end));
             start = failure.getMessage().indexOf("<", start + 1);
             end = failure.getMessage().indexOf(">", end + 1);
-            System.out.println("Expected Output : " + failure.getMessage().substring(start+1, end));
+            System.out.println("Your Output : " + failure.getMessage().substring(start+1, end));
             System.out.println("===============================");
          }
          System.out.println((result.getRunCount() - result.getFailureCount()) + " / " + result.getRunCount() + " Test Cases Passed....");

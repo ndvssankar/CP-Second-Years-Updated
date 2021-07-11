@@ -15,17 +15,17 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-      assertEquals(new IsRotation().isRotation(3412, 1234), true);
-      assertEquals(new IsRotation().isRotation(1234, 1234), true);
-      assertEquals(new IsRotation().isRotation(3142, 1234), false);
-      assertEquals(new IsRotation().isRotation(12345, 54321), true);
+      assertEquals("1.", true, new IsRotation().isRotation(3412, 1234));
+      assertEquals("2.", true, new IsRotation().isRotation(1234, 1234));
+      assertEquals("3.", false, new IsRotation().isRotation(3142, 1234));
+      assertEquals("4.", true, new IsRotation().isRotation(12345, 54321));
    }
 
    @Test
    public void testCase2() {
-      assertEquals(new IsRotation().isRotation(12345, 4321), false);
-      assertEquals(new IsRotation().isRotation(10010, 10100), false);
-      assertEquals(new IsRotation().isRotation(101111, 11110), false);
-      assertEquals(new IsRotation().isRotation(12345678, 43125678), false);
+      assertEquals("1.", false, new IsRotation().isRotation(12345, 4321));
+      assertEquals("2.", false, new IsRotation().isRotation(10010, 10100));
+      assertEquals("3.", false, new IsRotation().isRotation(101111, 11110));
+      assertEquals("4.", false, new IsRotation().isRotation(12345678, 43125678));
    }
 }

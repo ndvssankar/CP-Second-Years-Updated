@@ -15,12 +15,12 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals(new LeastFrequentLetters().leastFrequentLetters("aDq efQ? FB'daf!!!"), "be");
-		assertEquals(new LeastFrequentLetters().leastFrequentLetters("?'!!"), "");
-		assertEquals(new LeastFrequentLetters().leastFrequentLetters("abc def! GFE'cag!!!"), "bd");
-		assertEquals(new LeastFrequentLetters().leastFrequentLetters("abc def! GFE'cag!!!".toLowerCase()), "bd");
-		assertEquals(new LeastFrequentLetters().leastFrequentLetters("abc def! GFE'cag!!!".toUpperCase()), "bd");
-		assertEquals(new LeastFrequentLetters().leastFrequentLetters(""), "");
+		assertEquals("1.", "be", new LeastFrequentLetters().leastFrequentLetters("aDq efQ? FB'daf!!!"));
+		assertEquals("2.", "", new LeastFrequentLetters().leastFrequentLetters("?'!!"));
+		assertEquals("3.", "bd", new LeastFrequentLetters().leastFrequentLetters("abc def! GFE'cag!!!"));
+		assertEquals("4.", "bd", new LeastFrequentLetters().leastFrequentLetters("abc def! GFE'cag!!!".toLowerCase()));
+		assertEquals("5.", "bd", new LeastFrequentLetters().leastFrequentLetters("abc def! GFE'cag!!!".toUpperCase()));
+		assertEquals("6.", "", new LeastFrequentLetters().leastFrequentLetters(""));
    }
 
 }

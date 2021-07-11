@@ -15,8 +15,7 @@ import static org.junit.Assert.assertArrayEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-      assertArrayEquals(new ShortenLongRuns().shortenLongRuns(new int[]{2, 3, 5, 5, 5, 3}, 2), new int[]{2, 3, 5, 3});
-      assertArrayEquals(new ShortenLongRuns().shortenLongRuns(new int[]{2, 3, 5, 5, 5, 3}, 3), new int[]{2, 3, 5, 5, 3});
+      assertArrayEquals("1.", new int[]{2, 3, 5, 3}, new ShortenLongRuns().shortenLongRuns(new int[]{2, 3, 5, 5, 5, 3}, 2));
+      assertArrayEquals("2.", new int[]{2, 3, 5, 5, 3}, new ShortenLongRuns().shortenLongRuns(new int[]{2, 3, 5, 5, 5, 3}, 3));
    }
-
 }

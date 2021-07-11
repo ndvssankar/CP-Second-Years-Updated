@@ -1,1 +1,1 @@
-# CheckCp
+# DataTable and DataColumn classes

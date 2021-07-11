@@ -16,17 +16,17 @@ import static org.junit.Assert.assertEquals;
 public class TestJUnit {
    @Test
    public void testCase1() {
-		assertEquals(new nth_smithnumber().fun_nth_smithnumber(0), 4);
-      assertEquals(new nth_smithnumber().fun_nth_smithnumber(1), 22);
-      assertEquals(new nth_smithnumber().fun_nth_smithnumber(2), 27);
-      assertEquals(new nth_smithnumber().fun_nth_smithnumber(5), 94);
+		assertEquals("1.", 4, new nth_smithnumber().fun_nth_smithnumber(0));
+      assertEquals("2.", 22, new nth_smithnumber().fun_nth_smithnumber(1));
+      assertEquals("3.", 27, new nth_smithnumber().fun_nth_smithnumber(2));
+      assertEquals("4.", 94, new nth_smithnumber().fun_nth_smithnumber(5));
    }
 
    @Test
    public void testCase2() {
-     assertEquals(new nth_smithnumber().fun_nth_smithnumber(10), 274);
-      assertEquals(new nth_smithnumber().fun_nth_smithnumber(15), 382);
-      assertEquals(new nth_smithnumber().fun_nth_smithnumber(17), 438);
-      assertEquals(new nth_smithnumber().fun_nth_smithnumber(19), 483);
+      assertEquals("1.", 274, new nth_smithnumber().fun_nth_smithnumber(10));
+      assertEquals("2.", 382, new nth_smithnumber().fun_nth_smithnumber(15));
+      assertEquals("3.", 438, new nth_smithnumber().fun_nth_smithnumber(17));
+      assertEquals("4.", 483, new nth_smithnumber().fun_nth_smithnumber(19));
    }
 }

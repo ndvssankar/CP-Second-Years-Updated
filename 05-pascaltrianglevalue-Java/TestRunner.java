@@ -30,7 +30,9 @@ public class TestRunner {
          for (Failure failure : result.getFailures()) {
             int index = failure.getDescription().toString().indexOf("(");
             String msg = failure.getMessage();
-            msg = msg.substring(0, 2);
+            System.out.println("Message is : " + msg);
+            int idx = msg.indexOf(".");
+            msg = msg.substring(0, idx);
             System.out.println("Test Case : " + failure.getDescription().toString().substring(8, index) + "." + msg);
             int start = failure.getMessage().indexOf("<");
             int end = failure.getMessage().indexOf(">");

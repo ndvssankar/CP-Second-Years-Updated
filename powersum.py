@@ -10,10 +10,28 @@
 # If n is negative, return 0. Similarly, if k is negative, 
 # return 0.
 
+def power(a, b):
+    if b == 0:
+        return 1
+    else:
+        return a * power(a, b-1)
+
+
+
+
+
+
+
+
+
+
+
+
 def powerSum(n, k):
     # Your code goes here...
     return 0
 
 # Write your own test cases here...
-
+assert(powerSum(2,10) == 1025)
+assert(powerSum(3,10) == 60074)
 print ("All test cases passed...")
